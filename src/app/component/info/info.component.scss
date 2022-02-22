@@ -1,0 +1,24 @@
+.info{
+    position: absolute;
+    left: 20%;
+    top: 2.21%;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    
+    
+    /* l_txt */
+    
+    color: var(--color)
+    
+}
+
+@media screen and  (max-width: 768px) {
+ .info{
+     top:3.7%;
+ }   
+}

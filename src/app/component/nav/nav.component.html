@@ -1,0 +1,34 @@
+<nav class="navbar">
+
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img [src]="'assets/logo/logo-leadersleague.png'" alt="image" /></a>
+    
+    
+      <div class="collapse navbar-collapse"  >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+              <img [src]="'assets/svg/home.svg'" alt="image" /><a class="nav-link" [routerLink]="['/']">home</a><img *ngIf="false" [src]="'assets/svg/active.svg'" alt="image" />
+         
+          </li>
+          <li class="nav-item active">
+            <img [src]="'assets/svg/swap.svg'" alt="image" /><a class="nav-link" [routerLink]="['/search']">Musics</a><img *ngIf="true" [src]="'assets/svg/active.svg'" alt="image" />
+          </li>
+         
+        </ul>
+      
+      </div>
+      <span class="bar"></span>
+
+        <ul class="navbar-toggler">
+            <li class="nav-item toggler">
+                <a class="nav-link" [routerLink]="['/']"><img [src]="'assets/svg/home.svg'" alt="image" /></a>
+           
+            </li>
+            <li class="nav-item toggler"><a class="nav-link" [routerLink]="['/search']">
+                <img [src]="'assets/svg/menu.svg'" alt="image" /></a>
+            </li>
+           
+          </ul>
+ 
+     
+</nav>

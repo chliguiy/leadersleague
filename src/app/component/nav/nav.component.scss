@@ -1,0 +1,86 @@
+.navbar{
+
+    height: 100vh;
+    background-color: var(--background-light);
+   
+}
+.navbar-brand{
+    margin: auto;
+    float: left;
+    line-height: .8;
+    margin-left: 2.9vw;
+    margin-top: 3.5vh;
+    max-height: 39px;
+    width: auto;
+}
+
+.collapse{
+    padding-top: 11.79vh;
+   
+}
+.nav-item{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-inactive);
+    width: 39px;
+    height: 16px;
+    margin: auto;
+    
+    margin-left: 2.64vw;
+}
+.nav-item.active img{
+    filter: var(--filter-active);
+
+}
+.navbar-brand img{
+    width: 15vw;
+}
+.nav-item.active .nav-link{
+    color: var(--color-active);
+}
+.bar{
+    position: absolute;
+width: 14.86vw;
+height: 0;
+left: 2.01vw;
+top: 92.08vh;
+
+border: 1px solid var(--bar-color);
+}
+.navbar-toggler{
+    display: flex;
+    bottom: 0;
+    position: absolute;
+    flex-direction: row;
+    height: 7.37vh;
+    justify-content: center;
+    width: 18%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .collapse.navbar-collapse {
+   display: none;
+    }
+    .navbar-toggler{
+        width: 100vw;
+        position: fixed;
+         background: var(--background-light);
+
+    }
+    .navbar{
+        height: 0;
+        background-color: transparent;
+    }
+  }

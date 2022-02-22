@@ -1,0 +1,42 @@
+@import "../tools/mixins";
+
+// Variables root
+// =============
+:root {
+  --color-dark: #212121;
+  --color: #4F4F4F;
+  --color-light: #828282;
+  
+  --color-inactive:#828282;
+  --background: #F7F7F7;
+  --background-light: #FFFFFF;
+  --contrast: #B70217;
+  --border: #E5E5E5;
+  --transparent-red: #{rgba(#B70217, 0.4)};
+  --gap: 20px;
+  --space: 10px;
+  --color-active:#B70217;
+  --filter:invert(73%) sepia(16%) saturate(26%) hue-rotate(344deg) brightness(99%) contrast(84%);
+  --filter-active:invert(9%) sepia(93%) saturate(5895%) hue-rotate(349deg) brightness(87%) contrast(103%);
+  --bar-color:#F2F2F2;
+  --search-input-background:#F7F7F7;
+}
+// Dark mode
+// =============
+@include dark {
+  --color-dark: #ffffff;
+  --color: #B4B4B4;
+  --color-light: #E0E0E0;
+  --color-inactive:#B4B4B4;
+  --background: #242731;
+  --background-light: #323540;
+  --contrast: #B70217;
+  --border: #1B1C1F;
+  
+  --filter:invert(73%) sepia(16%) saturate(26%) hue-rotate(344deg) brightness(99%) contrast(84%);
+  --color-active:#F1E8E9;
+  --filter-active:invert(90%) sepia(7%) saturate(154%) hue-rotate(306deg) brightness(106%) contrast(90%);
+  --bar-color:#E0E0E0;
+  
+  --search-input-background:#F7F7F7;
+}

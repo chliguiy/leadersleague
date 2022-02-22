@@ -1,0 +1,81 @@
+/* Written with ❤ by LeadersLeague */
+
+// Tools & config
+@import "./tools/functions.scss";
+@import "./tools/mixins.scss";
+
+// Default
+@import "styles/variables";
+
+// Start your styles.. Have Fun 🍻 !
+body{
+    background: var(--background);
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+  }
+  .btn {
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.875rem 1rem;
+    font-size: 0.875rem;
+    line-height: 1;
+    width:  15.83vw;
+  }
+  
+  
+  .btn-radius {
+  color: #fff;
+  background: var(--contrast);
+  border-radius: 35px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  }
+  
+  .btn img {
+  filter: invert(100%) sepia(0%) saturate(16%) hue-rotate(358deg)
+    brightness(107%) contrast(104%);
+  
+  margin: auto;
+  
+  margin-right: 0;
+  }
+  .btn-txt {
+  // font-family: DM Sans;
+  // font-style: normal;
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 21px;
+  // /* identical to box height */
+  
+  // color: #ffffff;
+  
+  // /* Inside auto layout */
+  
+  // flex: none;
+  // order: 0;
+  // flex-grow: 0;
+  // margin: 0px 10px;
+  font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    flex: none;
+    margin: auto;
+  }
+  .dark-theme img{
+    filter: var(--filter);
+  }
+  .bar {
+    width: 0.97rem;
+    height: auto;
+    border: 1px solid var(--color-dark);
+  }

@@ -1,0 +1,10 @@
+
+
+<div class="app-theme-button">
+<button type="button"  class="theme-button is-light" *ngIf="isDark" (click)="toggleDarkTheme()">
+    <img [src]="'assets/svg/sun.svg'" alt="image" />
+   
+  </button>
+<button type="button" class="theme-button is-dark" *ngIf="!isDark" (click)="toggleDarkTheme()">
+    <img [src]="'assets/svg/moon.svg'" alt="image" />
+</button></div>

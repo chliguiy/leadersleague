@@ -1,0 +1,88 @@
+.login {
+  display: flex;
+  flex-direction: row;
+}
+.right {
+  width: 49.65vw;
+  height: 100vh;
+  flex: none;
+  display: flex;
+  background: var(--background-light);
+  flex-direction: column;
+}
+.left {
+  width: 50.35vw;
+
+  background: var(--background);
+  height: 100vh;
+  flex: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.connection {
+  display: flex;
+  width: 35.42vw;
+
+  margin: auto;
+}
+.connection-button {
+  width: 228px;
+  height: 55px;
+  left: 935px;
+  top: 602px;
+  background: var(--contrast);
+  border-radius: 35px;
+  margin: auto;
+  display: flex;
+}
+
+.logo {
+  margin: auto;
+}
+img {
+  margin: auto;
+}
+.btn img{
+  margin-right: 0;
+}
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  width: auto;
+}
+.flex-item {
+  padding: 5px;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  line-height: 20px;
+  color: var(--color-light);
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex-item.description {
+  width: 35.42vw;
+}
+.connection-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    /* or 150% */
+  
+    text-align: center;
+    letter-spacing: 0.4px;
+  
+    color: var(--color-light)
+  }

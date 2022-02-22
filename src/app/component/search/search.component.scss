@@ -1,0 +1,113 @@
+.search {
+  position: absolute;
+  width: 19.72vw;
+  height: fit-content;
+  left: 78.68vw;
+  top: 11.79vh;
+
+  /* l_bkg1 */
+
+  background: var(--background-light);
+  border-radius: 10px;
+}
+.bar {
+
+  margin-left: 25px;
+  margin-top: 9px;
+}
+.search-title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  height: auto;
+  margin-left: 25px;
+  /* identical to box height */
+
+  /* l_h2 */
+
+  color: var(--color);
+}
+.search-description {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  height: auto;
+  margin-left: 25px;
+  margin-top: 22px;
+  letter-spacing: 0.4px;
+
+  /* l_txt */
+
+  color: var(--color-light);
+}
+
+.col {
+  background: var(--search-input-background);
+  border-radius: 6px;
+  margin-left: 2.3vh;
+  margin-top: 1.47vh;
+  height: 3.22vh;
+  width: 16.53vw;
+  border: 1px solid transparent;
+  display: flex;
+}
+.btn {
+  margin-top: 2.3vh;
+  margin-bottom: 1.29vh;
+}
+.form-control{
+  
+  margin: auto 1.5vw;
+  background: var(--search-input-background);
+  border: 1px solid transparent;
+}
+.text-form{
+  margin: auto;font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1px;
+  color: #4F4F4F;
+  margin-left: 0;
+}
+.icon-form{
+  margin: auto;
+  margin-right: 0;
+}
+.btn img{
+  width: 17.5px;
+}
+.btn{
+  width: 12.38vw;
+  height: 3.98vh;
+}
+.form-control.text{
+  width: 12vw;
+  margin: auto;
+}
+
+form{
+  padding: 30px;
+}
+@media screen  and (max-width: 768px) {
+  .search{
+    position: unset;
+    width: auto;
+    
+  }
+  .btn{
+    width: 26.38vw;
+  }
+  .form-control.text{
+    width: 60vw;
+  }
+  .col{
+    width: 75vw;
+  }
+}

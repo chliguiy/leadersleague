@@ -1,0 +1,136 @@
+.search-module {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.04vh;
+  margin-left: 2vw;
+  width: 53.82vw;
+  height: 11.3vh;
+  border-radius: 4px;
+  background: var(--background-light);
+  flex-direction: row;
+}
+.search-module:first-child {
+  margin-top: 11.67vh;
+}
+.search-image {
+
+  width: 10.56vw;
+  display: flex;
+
+}
+.search-image span{
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 8px;
+    background-size: 100px 100px;
+}
+.search-info {
+  flex: 1;
+  margin-top: 1.67vh;
+  
+}
+.more-info {
+  width: 6.18vw;
+  height: 1.48vh;
+  margin-top: 7.96vh;
+  margin-right: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+
+  /* l_btn2 */
+
+  color: var(--color-active);
+}
+.genre{
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+letter-spacing: 1.5px;
+
+color: var(--color-light);
+
+
+mix-blend-mode: normal;
+}
+
+.title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+letter-spacing: 0.15px;
+
+/* l_title */
+
+color: var(--color);
+
+mix-blend-mode: normal;
+}
+.description{
+    /* Body 2 - reg 14 (21px, 0.25px) */
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+/* or 150% */
+
+letter-spacing: 0.25px;
+
+/* l_txt */
+
+color: var(--color-light);
+
+mix-blend-mode: normal;
+}
+.duration{
+    margin-top: 0.74vh;
+    
+}
+.time{
+    font-family: Roboto;
+font-style: italic;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+/* or 150% */
+
+letter-spacing: 0.25px;
+/* l_txt */
+
+color: #828282;
+
+mix-blend-mode: normal;
+margin:0.69vw;
+}
+
+@media screen  and (max-width: 768px) {
+  .search-module{
+    position: unset;
+    width: auto;
+    height: 7.26vh;
+    
+  }
+  .search-module:first-child {
+    margin-top: 0;
+  }
+}

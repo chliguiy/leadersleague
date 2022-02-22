@@ -1,0 +1,21 @@
+.app-theme-button
+{
+    position: absolute;
+    right: 3.04%;
+    top: 2.21%;
+
+}
+.theme-button{
+    background: transparent;
+    border: 1px solid transparent;
+}
+.theme-button.is-light img{
+    filter: invert(100%) sepia(0%) saturate(16%) hue-rotate(358deg)
+    brightness(107%) contrast(104%);
+}
+
+@media screen and  (max-width: 768px) {
+    .app-theme-button{
+        top:3.7%;
+    }   
+   }
