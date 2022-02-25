@@ -1,7 +1,10 @@
 import { Music } from './music.model';
 
 describe('Music', () => {
-  it('should create an instance', () => {
-    expect(new Music()).toBeTruthy();
-  });
+  it('has a languageName of "TypeScript"', () => {
+    const music: Music = {
+      data: []
+    };
+    expect(music).toBeTruthy();
+});
 });

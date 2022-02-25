@@ -1,21 +1,21 @@
-<div class="search-module" *ngFor="let content of result">
+<div class="search-module" *ngFor="let content of result ">
   <div class="search-image">
     <span
       [style]="{
-        'background-image': 'url(' + content.artwork['150x150'] + ')'
+        'background-image': 'url(' + $any(content).artwork['150x150'] + ')'
       }"
     ></span>
   </div>
   <div class="search-info">
-    <div class="genre">{{ content.genre }}</div>
+    <div class="genre">{{ $any(content).genre }}</div>
 
-    <div class="title">{{ content.title?content.title.substring(0,40):'' }}</div>
+    <div class="title">{{ $any(content).title?$any(content).title.substring(0,20):'' }}</div>
 
-    <div class="description">{{  content.description?content.description.substring(0,40):''  }}</div>
+    <div class="description">{{  $any(content).description?$any(content).description.substring(0,40):''  }}</div>
 
     <div class="duration">
       <img [src]="'assets/svg/stat.svg'" alt="image" /><span class="time">{{
-        content.duration
+        $any(content).duration | date:'mm:ss' 
       }}</span>
     </div>
   </div>

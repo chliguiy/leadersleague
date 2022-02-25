@@ -9,11 +9,13 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class ResultContentComponent implements OnInit {
 
-  constructor(private apiService:ApiService) { }
+  constructor() { }
   
-@Input() result:any;
+  @Input() result:any;
   ngOnInit(): void {
   
   }
+ 
 
+ 
 }

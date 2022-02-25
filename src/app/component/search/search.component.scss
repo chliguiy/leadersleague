@@ -22,6 +22,7 @@
   font-size: 18px;
   line-height: 21px;
   height: auto;
+  margin-top: 30px;
   margin-left: 25px;
   /* identical to box height */
 
@@ -85,29 +86,48 @@
 }
 .btn{
   width: 12.38vw;
-  height: 3.98vh;
+  height: 5vh;
 }
 .form-control.text{
   width: 12vw;
   margin: auto;
 }
 
-form{
-  padding: 30px;
-}
 @media screen  and (max-width: 768px) {
+  .btn{
+    margin-bottom: 0;
+  }
+  .icon-form {
+    margin: auto 0;
+  }
+  .form-control.text{
+    margin: auto 0 ;
+  }
   .search{
     position: unset;
     width: auto;
     
   }
+  
+.search-title { margin-top: 0;}
+form{
+  padding: 30px 0;
+}
   .btn{
-    width: 26.38vw;
+    width: 35vw;
+    height: 5vh;
   }
   .form-control.text{
     width: 60vw;
   }
   .col{
-    width: 75vw;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width:425px) {
+
+  .col{
+    width: 70vw;
   }
 }

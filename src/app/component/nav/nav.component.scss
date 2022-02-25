@@ -77,10 +77,14 @@ border: 1px solid var(--bar-color);
         width: 100vw;
         position: fixed;
          background: var(--background-light);
+         z-index:100;
 
     }
     .navbar{
         height: 0;
         background-color: transparent;
+    }
+    .bar{
+        display: none;
     }
   }

@@ -1,9 +1,36 @@
-
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.04vh;
+    width: 53.82vw;
+    border-radius: 4px;
+    background: transparent;
+    flex-direction: row;
+}
+.page-item{
+    background-image:url('~src/assets/svg/point.svg');
+    width: 10px;
+    background-repeat: no-repeat;
+    height: 10px;
+    margin-right: 10px
+}
+.page-item.active{
+    background-image:url('~src/assets/svg/point-active.svg');
+}
 @media screen  and (max-width: 768px) {
+    .pagination{
+        position: relative;
+        width: auto;
+        margin-top: 3vh;
+        margin-bottom: 7vh;
+    }
     .content{
     
         display: flex;
         flex-direction: column;padding: 30px;
     
+    }
+    .app-content{
+        margin-top: 3vh;
     }
 }

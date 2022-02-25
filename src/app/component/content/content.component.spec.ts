@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { ApiService } from 'src/app/services/api.service';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ContentComponent } from './content.component';
 
 describe('ContentComponent', () => {
@@ -8,7 +9,9 @@ describe('ContentComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContentComponent ]
+      declarations: [ ContentComponent ]   ,   
+      imports: [ HttpClientTestingModule ],
+      providers: [ ApiService ]
     })
     .compileComponents();
   });
