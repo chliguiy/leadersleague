@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Datum } from 'src/app/model/music.model';
+import { DataEntity } from 'src/app/model/music.model';
 import { ApiService } from 'src/app/services/api.service';
 
 @Component({
@@ -11,7 +11,7 @@ export class ContentComponent implements OnInit {
 
   constructor(private apiService:ApiService) { }
 
-  result :Datum[] =[];
+  result :DataEntity[] =[];
   startIndex:number = 0;
   endIndex:number = 6;
   numberOfItem:number=6;

@@ -1,5 +1,5 @@
 export interface Music {
-    data: Datum[];
+    data: DataEntity[];
 }
     
 export interface Artwork {
@@ -36,7 +36,7 @@ export interface User {
     track_count: number;
 }
 
-export interface Datum {
+export interface DataEntity {
     artwork: Artwork;
     description: string;
     genre: string;
