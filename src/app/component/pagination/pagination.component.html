@@ -1,0 +1,4 @@
+<ul class="pagination" *ngIf="result.length>0">
+    <li [ngClass]="['page-item', getActivePage()===n?'active':'']" *ngFor="let i of getArrayLenght(result.length) let n = index" (click)="getIndex(n)">
+      </li>
+  </ul>

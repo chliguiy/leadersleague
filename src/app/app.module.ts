@@ -14,6 +14,7 @@ import { ResultContentComponent } from './component/result-content/result-conten
 import { InfoComponent } from './component/info/info.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PaginationComponent } from './component/pagination/pagination.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ContentComponent,
     InfoComponent,
     ResultInfoComponent,
-    ResultContentComponent
+    ResultContentComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,

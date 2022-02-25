@@ -3,8 +3,5 @@
     <app-result-info [search_music]="result.length+' Muscis'" [download_music]="'0 Downloadable'"></app-result-info> 
     <app-search (newItemEvent)="getSearch($event)"></app-search>
     <app-result-content class="app-content"  [result]="result|slice:startIndex:endIndex"></app-result-content>
-    <ul class="pagination" *ngIf="result.length>0">
-        <li [ngClass]="['page-item', getActivePage()===n?'active':'']" *ngFor="let i of getArrayLenght(result.length) let n = index" (click)="getIndex(n)">
-          </li>
-      </ul>
+    <app-pagination  [result]="result" (changePage)="changePage($event)"></app-pagination>
 </div>

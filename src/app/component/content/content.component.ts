@@ -8,34 +8,27 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
-  constructor(private apiService:ApiService) { }
-
-  result :DataEntity[] =[];
+  result :DataEntity[];
   startIndex:number = 0;
   endIndex:number = 6;
   numberOfItem:number=6;
+  constructor(private apiService:ApiService) {
+    this.result=[];
+   }
+  
 
-  getArrayLenght(length: number){
-    return new Array(Math.round(length/6));
-  }
-
-  getIndex(pageIndex: number){
-    this.startIndex = pageIndex * this.numberOfItem;
-   this.endIndex = this.startIndex + this.numberOfItem;
-  }
-  getActivePage(){
-    return this.startIndex/this.numberOfItem;
-  }
   ngOnInit(): void {
   }
-
+changePage(data:any){
+this.startIndex=data.startIndex;
+this.endIndex=data.endIndex;
+}
 
   getSearch(title:any){
+    this.result=[];
     this.apiService.getMusic(title)
     .subscribe(response => {
       this.result=response.data;
-      
     });
   }
 }

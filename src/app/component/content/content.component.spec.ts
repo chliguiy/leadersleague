@@ -25,4 +25,7 @@ describe('ContentComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should Hava child component.', () => {
+    expect(component).toBeTruthy();
+  });
 });
